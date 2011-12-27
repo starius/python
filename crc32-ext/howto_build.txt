@@ -1,0 +1,3 @@
+swig -python mycrc32.i
+gcc -c -fpic mycrc32_wrap.c mycrc32.c  -DHAVE_CONFIG_H  -I"/usr/include/python2.6" -I"/usr/include/python2.6/config"
+gcc -shared mycrc32.o mycrc32_wrap.o -o _mycrc32.so

@@ -1,0 +1,1 @@
+print((lambda s: s.replace("\\", "\\\\").__mod__(s.replace("\\", "\\\\").replace('"', '\\"')))("print((lambda s: s.replace(\"\\\", \"\\\\\").__mod__(s.replace(\"\\\", \"\\\\\").replace('\"', '\\\"')))(\"%s\"))"))
